@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: max-content;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  /* height: 100vh; */
+  background-image: url("../images/walpaper.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.taskbar {
+  background-color: #f3f3f3;
+  height: 45px;
+}
+.taskBar-icons {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playArea {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.notTaskbar {
+  flex-grow: 1;
+}
+.tskbr-icon:hover {
+  cursor: pointer;
+}
+.startMenu {
+  background-color: #f3f3f3;
+  color: wheat;
+  position: absolute;
+}
