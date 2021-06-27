@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   height: max-content;
@@ -17,12 +18,16 @@ body {
 .taskbar {
   background-color: #f3f3f3;
   height: 45px;
+  display: flex;
+  justify-content: center;
+  z-index: 500;
 }
 .taskBar-icons {
   height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* width: max-content; */
 }
 .playArea {
   display: flex;
@@ -40,4 +45,50 @@ body {
   color: wheat;
   position: absolute;
   display: none;
+  width: 630px;
+  height: 653px;
+  border-radius: 7px;
+  z-index: 200;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f6f6f6;
+}
+.leftIcons {
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  display: flex;
+}
+.l1,
+.l2,
+.l3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  padding-left: 4.5px;
+  padding-right: 4.5px;
+}
+.greyIt {
+  color: #4b4b4b;
+}
+.l2 {
+  flex-direction: column;
+  font-size: 0.7rem;
+  font-weight: 600;
+  align-content: space-around;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.l1 span {
+  padding-left: 4.5px;
+  padding-right: 4.5px;
+}
+.notifIcon {
+  padding-right: 10px;
+}
+.taskBar-icons img {
+  margin-left: 5px;
+  margin-right: 5px;
 }
