@@ -42,9 +42,9 @@ body {
 }
 .startMenu {
   background-color: #f3f3f3;
-  color: wheat;
+  color: black;
   position: absolute;
-  /* display: none; */
+  display: flex;
   width: 630px;
   height: 653px;
   border-radius: 7px;
@@ -54,6 +54,10 @@ body {
   transform: translateX(-50%);
   background-color: #f6f6f6;
   transition: all 0.3s ease-in;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  justify-content: flex-end;
+  overflow: hidden;
 }
 .leftIcons {
   position: absolute;
@@ -93,10 +97,42 @@ body {
   margin-left: 7px;
   margin-right: 7px;
 }
-.battery{
+.battery {
   display: inline-block;
   font-size: 30px;
 }
-.batterySpan{
+.batterySpan {
   padding-top: 3px;
+}
+.pinned,
+.recommended,
+.userPpower,
+.userni {
+  display: flex;
+  align-items: center;
+}
+.userPpower {
+  flex-basis: 10%;
+  background-color: #f3f3f3;
+  border-top: 2px solid #ececec;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.userImglogo {
+  width: 20px;
+}
+.usrlogo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+}
+.userni {
+  width: 20%;
+  justify-content: space-between;
 }
