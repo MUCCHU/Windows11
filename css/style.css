@@ -44,15 +44,16 @@ body {
   background-color: #f3f3f3;
   color: wheat;
   position: absolute;
-  display: none;
+  /* display: none; */
   width: 630px;
   height: 653px;
   border-radius: 7px;
   z-index: 200;
-  bottom: 55px;
+  bottom: -608px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #f6f6f6;
+  transition: all 0.3s ease-in;
 }
 .leftIcons {
   position: absolute;
@@ -67,8 +68,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 45px;
-  padding-left: 4.5px;
-  padding-right: 4.5px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .greyIt {
   color: #4b4b4b;
@@ -82,13 +83,20 @@ body {
   padding-bottom: 1px;
 }
 .l1 span {
-  padding-left: 4.5px;
-  padding-right: 4.5px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .notifIcon {
-  padding-right: 10px;
+  padding-right: 14px;
 }
 .taskBar-icons img {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.battery{
+  display: inline-block;
+  font-size: 30px;
+}
+.batterySpan{
+  padding-top: 3px;
 }
