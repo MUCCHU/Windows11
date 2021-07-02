@@ -109,7 +109,6 @@ body {
 .userPpower,
 .userni {
   display: flex;
-  align-items: center;
 }
 .userPpower {
   flex-basis: 10%;
@@ -118,6 +117,7 @@ body {
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
+  align-items: center;
 }
 .userImglogo {
   width: 20px;
@@ -135,4 +135,122 @@ body {
 .userni {
   width: 20%;
   justify-content: space-between;
+  align-items: center;
+}
+.recommended {
+  flex-basis: 35%;
+  /* background-color: pink; */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.pinned {
+  flex-basis: 55%;
+  /* background-color: yellow; */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.recommended,
+.pinned {
+  padding-top: 5%;
+  flex-direction: column;
+}
+.appHeadingsinstartmenu {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebuttonofheading {
+  display: flex;
+  background-color: #fcfcfc;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  border: 2px solid #d5d5d5;
+  border-radius: 7px;
+  font-size: 0.8rem;
+}
+.morebuttontext {
+  height: max-content;
+  padding-bottom: 2px;
+}
+.startSectiontitle {
+  font-weight: 600;
+}
+.arrows {
+  color: #777777;
+}
+.startMenuicons {
+  padding-top: 4%;
+}
+.startMenuicons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.iconspcaptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4.3%;
+  margin-right: 4.3%;
+  width: min-content;
+}
+.captionoficons {
+  font-size: 12px;
+  color: #1f1f1f;
+  font-weight: 501;
+  width: max-content;
+}
+.extremeLefticon {
+  margin-left: 0px;
+}
+.extremeRighticon {
+  margin-right: 0px;
+}
+.windowPopup {
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* width: 100%;
+  height: 100vh; */
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.topBarhavingButtons {
+  width: 100%;
+  height: 4%;
+  background-color: #dde1e5;
+}
+.topBarhavingButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+.threeButtons {
+  display: flex;
+  align-items: center;
+}
+.thicon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+@keyframes openUpWindow {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes closeWindow {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+  }
 }

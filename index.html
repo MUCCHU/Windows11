@@ -16,7 +16,15 @@
     <div class="playArea">
 
         <div class="notTaskbar">
-            This area is not part of taskbar
+            <div class="windowPopup" style="width: 0%; height: 0%;">
+                <div class="topBarhavingButtons">
+                    <div class="threeButtons">
+                        <div class="material-icons thicon">minimize</div>
+                        <div class="far fa-copy fa-rotate-180 thicon"></div>
+                        <div class="material-icons thicon" onclick="openWindow()">close</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="taskbar">
             <div class="taskBar-icons">
@@ -31,6 +39,7 @@
             <div class="leftIcons">
                 <div class="l1">
                     <span class="material-icons greyIt">expand_less</span>
+                    <span class="material-icons greyIt">rss_feed</span>
                     <span class="batterySpan"><img
                             src="https://img.icons8.com/ios-glyphs/30/000000/high-battery.png" /></span>
                     <span class="fas fa-volume-up greyIt"></span>
@@ -46,8 +55,52 @@
             </div>
         </div>
         <div class="startMenu" id="startMenoo">
-            <div class="pinned">Pinned</div>
-            <div class="recommended">recommended</div>
+            <div class="pinned">
+                <div class="appHeadingsinstartmenu">
+                    <div class="startSectiontitle">Pinned</div>
+                    <div class="sidebuttonofheading">
+                        <div class="morebuttontext">All apps</div><span
+                            class="material-icons arrows">chevron_right</span>
+                    </div>
+                </div>
+                <div class="startMenuicons">
+                    <div class="iconspcaptions extremeLefticon">
+                        <div class="iconofstartbar"><img src="images/chromeicon.png" onclick="openWindow()" alt="">
+                        </div>
+                        <div class="captionoficons">Chrome</div>
+                    </div>
+                    <div class="iconspcaptions">
+                        <div class="iconofstartbar"><img src="images/fileexplorericon.png" alt=""></div>
+                        <div class="captionoficons">File Explorer</div>
+                    </div>
+                    <div class="iconspcaptions">
+                        <div class="iconofstartbar"><img src="images/mailicon.png" alt=""></div>
+                        <div class="captionoficons">Mail</div>
+                    </div>
+                    <div class="iconspcaptions">
+                        <div class="iconofstartbar"><img src="images/vscicon.png" alt=""></div>
+                        <div class="captionoficons">VS Code</div>
+                    </div>
+                    <div class="iconspcaptions">
+                        <div class="iconofstartbar"><img src="images/vscicon.png" alt=""></div>
+                        <div class="captionoficons">VS Code</div>
+                    </div>
+                    <div class="iconspcaptions extremeRighticon">
+                        <div class="iconofstartbar"><img src="images/vscicon.png" alt=""></div>
+                        <div class="captionoficons">VS Code</div>
+                    </div>
+                </div>
+            </div>
+            <div class="recommended">
+                <div class="appHeadingsinstartmenu">
+                    <div class="startSectiontitle">Recommended</div>
+                    <div class="sidebuttonofheading">
+                        <div class="morebuttontext">More</div>
+                        <span class="material-icons arrows">chevron_right</span>
+                    </div>
+                </div>
+                <div class="startMenuicons">Icons</div>
+            </div>
             <div class="userPpower">
                 <div class="userni">
                     <div class="usrlogo"><img class="userImglogo" src="images/userI.png" alt=""></div>
@@ -57,6 +110,7 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/brain.js"></script>
 </body>
 
